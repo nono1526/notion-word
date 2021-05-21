@@ -1,0 +1,22 @@
+{
+  "name": "notion-word",
+  "action": {
+    "default_title": "My Bookmarks",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Quickly write unknown word to notion database.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "contextMenus",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*/"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
